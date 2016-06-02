@@ -29,7 +29,9 @@ module.exports = {
     alias: {
       Main: 'app/components/Main.jsx',
       applicationStyles: 'app/style/app.scss',
-      Navigation: 'app/components/Navigation.jsx'
+      Navigation: 'app/components/Navigation.jsx',
+      Timer: 'app/components/Timer.jsx',
+      Countdown: 'app/components//Countdown.jsx'
     },
     //ビルド対象に含めたい(requireしている)ファイルの拡張子を指定します
     extentions: ['','.js','.jsx']
