@@ -1,10 +1,12 @@
 var React = require('react');
 
 var CountdownForm = React.createClass({
+  //ボタンクリック時の処理
   onSubmit: function(e) {
     e.preventDefault();
     var strSeconds = this.refs.seconds.value;
 
+    //数値の場合、値をクリアして、プロパティの値へセットする。(Countdown.jsxファイル内のhtmlタグにある)
     if (strSeconds.match(/^[0-9]*$/)) {
       this.refs.seconds.value = '';
       this.props.onSetCountdown(parseInt(strSeconds, 10));
