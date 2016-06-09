@@ -33,7 +33,8 @@ module.exports = {
       Timer: 'app/components/Timer.jsx',
       Countdown: 'app/components/Countdown.jsx',
       Clock: 'app/components/Clock.jsx',
-      CountdownForm: 'app/components/CountdownForm.jsx'
+      CountdownForm: 'app/components/CountdownForm.jsx',
+      Controls: 'app/components/Controls.jsx'
     },
     //ビルド対象に含めたい(requireしている)ファイルの拡張子を指定します
     extentions: ['','.js','.jsx']
