@@ -27,5 +27,13 @@ describe('Controls', () => {
 
       expect($startButton.length).toBe(1);
     });
+
+    it('should reset count on stopped', () => {
+      var controls = TestUtils.renderIntoDocument(<Controls countdownStatus="pause"/>);
+      var $el = $(ReactDom.findDOMNode(controls));
+      var $startButton = $el.find('button:contains(Start)');
+
+      expect($startButton.length).toBe(1);
+    });
   });
 });
