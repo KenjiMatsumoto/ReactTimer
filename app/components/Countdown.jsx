@@ -31,13 +31,13 @@ var Countdown = React.createClass({
 
   },
   componentWillMount: function() {
-    console.log('componentWillMount');
+
   },
   componentDidMount: function() {
-    console.log('componentDidMount');
+
   },
   componentWillUnmount: function() {
-    console.log('componentDidUnmount');
+  
     clearInterval(this.timer);
     this.timer = undefined;
   },
