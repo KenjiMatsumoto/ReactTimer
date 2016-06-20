@@ -1,4 +1,5 @@
 var webpack = require('webpack');
+var path = require('path');
 
 module.exports = {
   //ビルドの起点となるファイルパスの指定
@@ -55,6 +56,11 @@ module.exports = {
         //ビルドの除外対象ファイルを指定する(includeの場合はビルドに含むものを指定する)
         exclude: /(node_modules|bower_components)/
       }
+    ]
+  },
+  sassLoader: {
+    includePaths: [
+      path.resolve(__dirname, './node_modules/foundation-sites/scss')
     ]
   },
   //以下の記述をすることでbundleファイルでの参照ではなく
